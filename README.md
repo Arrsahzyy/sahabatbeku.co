@@ -1,73 +1,135 @@
-# Welcome to your Lovable project
+# Sahabat Freezer - Smart Freezer Monitoring & Stock Management
 
-## Project info
+Sistem monitoring freezer pintar dan manajemen stok untuk UMKM dengan alarm real-time, grafik penggunaan energi, dan notifikasi kadaluarsa.
 
-**URL**: https://lovable.dev/projects/2a727d1a-9f8d-40ff-9fff-b4674fc67e1f
+## 🚀 Features
 
-## How can I edit this code?
+### 📊 Dashboard Monitoring
+- **Suhu Real-time**: Monitor suhu freezer dengan update setiap detik
+- **Grafik Suhu**: Visualisasi data suhu 24 jam, 7 hari, 30 hari  
+- **Status Alarm**: Indikator visual untuk kondisi normal, peringatan, dan kritis
 
-There are several ways of editing your application.
+### ⚡ Energy Management
+- **Konsumsi Daya**: Monitor penggunaan listrik real-time dalam Watts
+- **Kalkulasi Biaya**: Estimasi biaya listrik dalam Rupiah berdasarkan tarif PLN
+- **Grafik Energi**: Analisis konsumsi energi harian, mingguan, bulanan
+- **Efisiensi Tracker**: Monitor dan optimalisasi performa energi
 
-**Use Lovable**
+### 📦 Stock Management
+- **Tracking Kadaluarsa**: List produk yang akan expired ≤7, ≤14, ≤30 hari
+- **FEFO System**: First Expired, First Out management
+- **Batch Tracking**: Nomor batch dan supplier information
+- **Alert System**: Notifikasi untuk stok hampir kadaluarsa
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2a727d1a-9f8d-40ff-9fff-b4674fc67e1f) and start prompting.
+### 🎨 User Experience
+- **Responsive Design**: Optimal di desktop dan mobile
+- **Real-time Updates**: Data ter-update otomatis tanpa refresh
+- **Interactive Charts**: Grafik interaktif dengan hover tooltips
+- **Smooth Animations**: Animasi yang ringan dan interaktif
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠 Tech Stack
 
-**Use your preferred IDE**
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS + shadcn/ui
+- **Charts**: Custom SVG charts with animations
+- **Icons**: Lucide React
+- **Routing**: React Router v6
+- **Build Tool**: Vite
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
+- Node.js 18+ 
+- npm atau yarn
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+# Clone repository
+git clone https://github.com/Arrsahzyy/sahabatbeku.co.git
+cd sahabatbeku.co
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Server akan berjalan di `http://localhost:4000`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Available Scripts
 
-**Use GitHub Codespaces**
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📱 Usage
 
-## What technologies are used for this project?
+1. **Homepage**: Akses fitur-fitur utama dan demo
+2. **Dashboard**: Klik "Coba Demo Dashboard" untuk monitoring lengkap
+3. **Navigation**: Gunakan tombol navigasi untuk pindah antar halaman
 
-This project is built with:
+## 🎯 Key Components
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Dashboard Components
+- `RealTimeTemperature`: Display suhu real-time dengan status indicator
+- `TemperatureChart`: Grafik suhu dengan multiple time ranges
+- `EnergyStats`: Statistik konsumsi energi dan biaya
+- `EnergyChart`: Visualisasi konsumsi energi dalam bar chart
+- `ExpiryStock`: Management stok dengan kategorisasi kadaluarsa
 
-## How can I deploy this project?
+### Main Pages  
+- `Index`: Homepage dengan hero, features, dan demo section
+- `Dashboard`: Halaman monitoring lengkap
+- `NotFound`: 404 error page
 
-Simply open [Lovable](https://lovable.dev/projects/2a727d1a-9f8d-40ff-9fff-b4674fc67e1f) and click on Share -> Publish.
+## 🌟 Features Highlights
 
-## Can I connect a custom domain to my Lovable project?
+- ✅ Real-time temperature monitoring dengan animasi smooth
+- ✅ Interactive charts dengan hover effects  
+- ✅ Energy cost calculation dalam Rupiah
+- ✅ Stock expiry management dengan color coding
+- ✅ Responsive design untuk semua device
+- ✅ Telegram notification simulation
+- ✅ FEFO (First Expired First Out) system
 
-Yes, you can!
+## 🚀 Deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Website ini dapat di-deploy ke:
+- Vercel (recommended)
+- Netlify  
+- GitHub Pages
+- Atau hosting lainnya yang support static sites
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```bash
+# Build untuk production
+npm run build
+
+# File build ada di folder 'dist'
+```
+
+## 🤝 Contributing
+
+1. Fork repository
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 📞 Contact
+
+- Website: [sahabatbeku.co](https://sahabatbeku.co)
+- Email: support@sahabatbeku.co
+- GitHub: [@Arrsahzyy](https://github.com/Arrsahzyy)
+
+---
+
+Made with ❤️ for UMKM Indonesia
