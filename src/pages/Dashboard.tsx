@@ -72,21 +72,21 @@ const Dashboard = () => {
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}>
           {/* Top Row - Temperature */}
-          <div className="grid lg:grid-cols-3 gap-8 mb-8">
-            <div className="lg:col-span-1">
+          <div className="dashboard-row mb-8">
+            <div className="dashboard-card-full-height">
               <RealTimeTemperature />
             </div>
-            <div className="lg:col-span-2">
+            <div className="dashboard-card-full-height">
               <TemperatureChart />
             </div>
           </div>
 
           {/* Middle Row - Energy */}
-          <div className="grid lg:grid-cols-3 gap-8 mb-8">
-            <div className="lg:col-span-1">
+          <div className="dashboard-row mb-8">
+            <div className="dashboard-card-full-height">
               <EnergyStats />
             </div>
-            <div className="lg:col-span-2">
+            <div className="dashboard-card-full-height">
               <EnergyChart />
             </div>
           </div>
