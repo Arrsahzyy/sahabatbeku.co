@@ -22,6 +22,19 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-6">
+              <div className="flex items-center gap-4 mb-6">
+                <img 
+                  src="/iconsahabatbeku.jpg" 
+                  alt="Sahabat Beku Logo" 
+                  className="w-16 h-16 rounded-full object-cover shadow-lg"
+                />
+                <div className="w-px h-12 bg-gradient-to-b from-brand-blue to-brand-cyan"></div>
+                <div className="text-sm text-gray-600">
+                  <div className="font-semibold">Smart Freezer</div>
+                  <div>Monitoring System</div>
+                </div>
+              </div>
+              
               <h1 className="text-5xl lg:text-6xl font-bold text-brand-text leading-tight">
                 <span className="text-brand-blue">Sahabat Freezer</span>
                 <br />

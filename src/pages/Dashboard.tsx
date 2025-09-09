@@ -39,11 +39,18 @@ const Dashboard = () => {
                   <ArrowLeft className="w-4 h-4" />
                   Kembali
                 </Button>
-                <div>
-                  <h1 className="text-2xl font-bold text-brand-text">
-                    Dashboard <span className="text-brand-blue">Sahabat Freezer</span>
-                  </h1>
-                  <p className="text-sm text-gray-600">Monitoring Real-Time Freezer & Stok Management</p>
+                <div className="flex items-center gap-3">
+                  <img 
+                    src="/iconsahabatbeku.jpg" 
+                    alt="Sahabat Beku Logo" 
+                    className="w-10 h-10 rounded-full object-cover shadow-md"
+                  />
+                  <div>
+                    <h1 className="text-2xl font-bold text-brand-text">
+                      Dashboard <span className="text-brand-blue">Sahabat Freezer</span>
+                    </h1>
+                    <p className="text-sm text-gray-600">Monitoring Real-Time Freezer & Stok Management</p>
+                  </div>
                 </div>
               </div>
               <div className="flex items-center gap-2">
